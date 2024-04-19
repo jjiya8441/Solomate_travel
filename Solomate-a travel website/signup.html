@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Page</title>
+<style>
+  body {
+    background-image: url('assets/images/travelbg2.JPG'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity if needed */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  input[type="text"], textarea, select, input[type="number"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  /* Set a fixed width for all input fields */
+  input[type="text"], input[type="number"], input[type="password"], select {
+    width: calc(100% - 22px); /* Adjust as needed */
+  }
+  input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Signup Form</h2>
+    <form action="connect.php" method="post">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+      </div>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="m">Male</option>
+          <option value="f">Female</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="mail">Enter Gmail:</label>
+        <input id="mail" name="mail" required>
+      </div>
+
+      <div>
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" required>
+      </div>
+      
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <input type="submit" value="Submit">
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solomate - Welcome!</title>
+    <style>
+        /* Reset default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #333; /* Dark background color */
+            color: white;
+            padding: 20px 40px; /* Increased padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-left {
+            margin-right: auto; /* Pushes the left content to the left */
+        }
+
+        .navbar-right {
+            margin-left: auto; /* Pushes the right content to the right */
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px; /* Adjust spacing between links */
+            font-size: 18px; /* Increased font size */
+        }
+
+        .logo {
+            font-size: 24px; /* Adjust the font size for the logo */
+            margin-right: 20px; /* Add margin to separate logo from home link */
+        }
+        /* Main content styles */
+        .main-content {
+            background-image: url('assets/images/travel.JPG'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            height: calc(100vh - 160px); /* Full height of viewport minus navbar and footer heights */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background-image {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent black overlay */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .background-text {
+            color: rgb(0, 0, 0);
+            font-size: 3em; /* Adjust font size as needed */
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 40px; /* Increased padding */
+            text-align: center;
+            font-size: 18px; /* Increased font size */
+        }
+        .social-media-icons {
+            margin-top: 20px;
+        }
+
+        .social-media-icons a {
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Adjust size of social media icons */
+        .social-media-icons img {
+            width: 30px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="logo">Solomate</span>
+            <a href="index.html" class="nav-link">Home</a>
+        </div>
+        <div class="navbar-right">
+            <a href="login.html" class="nav-link">Login</a>
+            <a href="signup.html" class="nav-link">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="background-image">
+            <h1 class="background-text">Welcome to Solomate!</h1>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        <p>Travel The World With Us</p>
+      </div>
+      <div class="social-media-icons">
+        <a href="https://www.instagram.com/krutarth_pandya_?igsh=MWozZXp3b29oc2w3bA%3D%3D&utm_source=qr"><img src="assets/images/icons/instagram.JPEG" alt="Instagram"></a>
+        <a href="https://www.facebook.com"><img src="assets/images/icons/facebook.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/krutarth-pandya-42197a267/"><img src="assets/images/icons/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    </footer>
+</body>
+</html>
